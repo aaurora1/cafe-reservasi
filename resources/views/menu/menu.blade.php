@@ -20,19 +20,17 @@
         $wedangan = [
           ['title' => 'Wedang Laksmana', 'harga' => '12K', 'desc' => 'Jahe, Vanila, dan Jeruk Nipis', 'img' => 'wedang-laksmana.jpg'],
           ['title' => 'Wedang Bharata', 'harga' => '12K', 'desc' => 'Teh, Jahe, Vanila, Kayu Manis', 'img' => 'wedang-bharata.jpg'],
-          ['title' => 'Wedang Sengkuni', 'harga' => '10K', 'desc' => 'Jahe dan Sereh', 'img' => 'wedang-sengkuni.jpg'],
-          ['title' => 'Wedang Kumbakarna', 'harga' => '7K', 'desc' => 'Jahe, Secang, Kayu Manis, Sereh, Kapulaga, Gula Batu', 'img' => 'wedang-kumbakarna.jpg'],
           ['title' => 'Wedang Jeruk', 'harga' => '7K', 'desc' => 'Jeruk Peras Khas Hanoman', 'img' => 'wedang-jeruk.jpg'],
           ['title' => 'Wedang Teh Anjani', 'harga' => '5K', 'desc' => 'Teh Khas Ndalem Hanoman', 'img' => 'wedang-anjani.jpg'],
           ['title' => 'Wedang Dewi Sri', 'harga' => '15K', 'desc' => 'Jeruk, Susu, dan Sereh', 'img' => 'wedang-dewi-sri.jpg'],
           ['title' => 'Wedang Anila', 'harga' => '15K', 'desc' => 'Jahe, Susu, Kayu Manis', 'img' => 'wedang-anila.jpg'],
           ['title' => 'Wedang Aswanikumba', 'harga' => '13K', 'desc' => 'Teh, Jahe, dan Susu', 'img' => 'wedang-aswanikumba.jpg'],
-          ['title' => 'Wedang Dewi Shinta', 'harga' => '12K', 'desc' => 'Teh dan Susu', 'img' => 'wedang-dewi-shinta.jpg'],
         ];
       @endphp
 
       {{-- Loop Menu Wedangan --}}
       @foreach($wedangan as $item)
+      
       <div class="col-md-3 mb-4 menu-item wedangan">
         <div class="card shadow h-100 bg-white">
           <img src="{{ asset('img/'.$item['img']) }}" class="card-img-top" alt="{{ $item['title'] }}" style="height: 180px; object-fit: cover;">
@@ -47,10 +45,50 @@
       <!-- Espresso (contoh) -->
       <div class="col-md-3 mb-4 menu-item espresso" style="display: none;">
         <div class="card shadow h-100 bg-white">
-          <img src="{{ asset('img/espresso.jpg') }}" class="card-img-top" alt="Espresso" style="height: 180px; object-fit: cover;">
+          <img src="{{ asset('img/daren.jpg') }}" class="card-img-top" alt="Espresso" style="height: 180px; object-fit: cover;">
           <div class="card-body">
-            <h5 class="card-title">Espresso <span class="float-end">18K</span></h5>
-            <p class="card-text">Espresso dengan aroma kuat dan rasa dalam.</p>
+            <h5 class="card-title">Daren <span class="float-end">18K</span></h5>
+            <p class="card-text">Espresso, Secret Milk dan Whipcream.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item espresso" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/aren.jpg') }}" class="card-img-top" alt="Espresso" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Aren <span class="float-end">18K</span></h5>
+            <p class="card-text">Espresso, Susu Segar dan Gula Aren.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item espresso" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/cap.jpg') }}" class="card-img-top" alt="Espresso" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Cappucino <span class="float-end">18K</span></h5>
+            <p class="card-text">Espresso dan Susu Segar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item espresso" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/vanila.jpg') }}" class="card-img-top" alt="Espresso" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Vanila Latte <span class="float-end">18K</span></h5>
+            <p class="card-text">Espresso Susu Segar dan Vanila.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item espresso" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/caffelatte.jpg') }}" class="card-img-top" alt="Espresso" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Caffe Latte <span class="float-end">18K</span></h5>
+            <p class="card-text">Espresso dan Susu Segar.</p>
           </div>
         </div>
       </div>
@@ -58,10 +96,50 @@
       <!-- Snack (contoh) -->
       <div class="col-md-3 mb-4 menu-item snack" style="display: none;">
         <div class="card shadow h-100 bg-white">
-          <img src="{{ asset('img/snack.jpg') }}" class="card-img-top" alt="Snack" style="height: 180px; object-fit: cover;">
+          <img src="{{ asset('img/d.jpg') }}" class="card-img-top" alt="Snack" style="height: 180px; object-fit: cover;">
           <div class="card-body">
-            <h5 class="card-title">Snack Platter <span class="float-end">20K</span></h5>
-            <p class="card-text">Aneka gorengan dan camilan khas café</p>
+            <h5 class="card-title">Dimsum <span class="float-end">15K</span></h5>
+            <p class="card-text">Dimsum Ayam</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item snack" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/o.jpg') }}" class="card-img-top" alt="Snack" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Otak-otak <span class="float-end">20K</span></h5>
+            <p class="card-text">Otak-otak Instan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item snack" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/p.jpg') }}" class="card-img-top" alt="Snack" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Pisang Goreng <span class="float-end">20K</span></h5>
+            <p class="card-text">Pisang goreng dengan adonan manis</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item snack" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/g.jpg') }}" class="card-img-top" alt="Snack" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Gemblong Cotot <span class="float-end">20K</span></h5>
+            <p class="card-text">Olahan Singkong Lembut Diisi Gula Manis</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4 menu-item snack" style="display: none;">
+        <div class="card shadow h-100 bg-white">
+          <img src="{{ asset('img/k.jpg') }}" class="card-img-top" alt="Snack" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Kentang Goreng <span class="float-end">20K</span></h5>
+            <p class="card-text">Olahan Kentang Crinkle</p>
           </div>
         </div>
       </div>
