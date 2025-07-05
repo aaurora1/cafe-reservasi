@@ -1,0 +1,22 @@
+.paket-img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.paket-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.paket-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.paket-card.selected {
+  border-color: #ffc107;
+  box-shadow: 0 0 10px rgba(255,193,7,0.4);
+}
